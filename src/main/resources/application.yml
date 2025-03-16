@@ -1,0 +1,8 @@
+spring:
+  jpa:
+    show-sql: true # 전송 쿼리 확인
+    properties:
+      hibernate:
+        format_sql: true
+
+    defer-datasource-initialization: true # 앱 실행 시 테이블 생성 후 data.sql 실행
