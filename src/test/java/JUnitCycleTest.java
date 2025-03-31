@@ -39,7 +39,10 @@ public class JUnitCycleTest {
         System.out.println("@AfterAll");
     }
 
-    @AfterEach // 테스트 케이스를 종료하기 전 마다 실행
+    @AfterEach
+    // 테스트 케이스를 종료하기 전 마다 실행
+    // 테스트 이후 특정 데이터를 삭제해야하는 경우 사용
+    // 각 인스턴스에 대해 메서드를 호출해야 하므로 메서드는 static이 아니어야 함
     public void afterEach() {
         System.out.println("@AfterEach");
     }
